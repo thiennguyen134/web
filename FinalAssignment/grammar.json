@@ -1,0 +1,38 @@
+[
+	{
+		"term": "Missä",
+		"description": "Used to indicate a location where something is happening or someone is located.",
+		"example": {
+			"fi": "Missä hän istuu? Hän istuu työpöydällään kotitoimistossa.",
+			"en": "Where is he/she sitting? He/She is sitting at his/her desk in the home office."
+		},
+		"image": "./assets/images/vocabulary/missä.jpg",
+		"audio": "./assets/audios/missä.mp3",
+		"youtube": "https://www.youtube.com/watch?v=cgzBhqnt9Qo"
+	},
+
+	{
+		"term": "Mistä",
+		"description": "Denotes the origin of movement or the starting point of an action.",
+		"example": {
+			"fi": "Mistä sinä tulet? Tulen Suomesta.",
+			"en": "Where do you come from? I come from Finland."
+		},
+		"image": "./assets/images/vocabulary/mistä.jpg",
+		"audio": "./assets/audios/mistä.mp3",
+		"youtube": "https://www.youtube.com/watch?v=cgzBhqnt9Qo"
+	},
+
+	{
+		"term": "Mihin",
+		"description": "Indicates the direction or the endpoint of movement.",
+		"example": {
+			"fi": "Mihin sinä menet? Menen kauppaan.",
+			"en": "Where are you going? I am going to the store."
+		},
+		"image": "./assets/images/vocabulary/mihin.jpg",
+		"audio": "./assets/audios/mihin.mp3",
+		"youtube": "https://www.youtube.com/watch?v=cgzBhqnt9Qo"
+	}
+
+]

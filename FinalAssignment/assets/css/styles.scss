@@ -1,0 +1,664 @@
+// Import Bootstrap's functions and variables
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+
+// Custom Variables
+// Variables
+$primary-color: #0056b3; // Dark blue for headings and accents
+$secondary-color: #f5f5f5;
+$text-color: #333333; // Dark gray for main text
+$heading-color: #2a2a2a; // Slightly lighter gray for headings
+$background-color: #D3D3D3; // Light gray background
+$navbar-bg-color: #FDFEFE; // Very light, almost white navbar background
+$navbar-link-color: #0056b3; // Distinct color for navbar links
+$navbar-link-hover-color: #003875; // Darker shade for navbar link hover
+$font-family: 'Arial', sans-serif; // Primary font family
+
+// Global styles
+body {
+    background-color: $background-color !important;
+    color: $text-color;
+    font-family: $font-family;
+    line-height: 1.6;
+    max-width: 100%;
+}
+
+// Heading styles
+h1 {
+    font-size: 2.5rem; // Larger for banners
+    color: $primary-color;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem; // Section headings
+    color: $heading-color;
+    font-weight: 600;
+}
+
+// Paragraph styles
+p {
+    font-size: 1rem;
+    color: $text-color; // Readability
+}
+
+// Navbar link styles
+.nav-link {
+    color: $navbar-link-color;
+    font-weight: 500;
+    &:hover {
+        color: $navbar-link-hover-color;
+        text-decoration: none;
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; // Smaller on mobile
+    }
+
+    h2 {
+        font-size: 1.75rem; // Smaller on mobile
+    }
+
+    .nav-link {
+        font-size: 0.9rem; // Adjust for mobile
+    }
+}
+
+header {
+	background-color: $background-color;
+	margin: 0 auto;
+	margin-top: 45px;
+	max-width: 100%;
+	// Media query for mobile screens
+    @media (max-width: 768px) {
+        margin-top: 0; // Remove top margin on mobile screens
+    }
+	    // Header container styles for centering the navbar
+    .header-container {
+		background-color: $navbar-bg-color;
+		margin: 0 auto; // Center the container
+		max-width: 85%; // Adjusted to 70% as an example
+		padding: 0 15px; // Horizontal padding
+		border-radius: 8px; // Rounded corners
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Optional shadow for depth
+    }
+
+    .navbar {
+        margin: 0 auto; // Center the navbar within header-container
+        max-width: 100%;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .navbar-dark .navbar-nav .nav-item.active > .nav-link,
+    .navbar-dark .navbar-nav .nav-link.active {
+        color: $navbar-link-color;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: $navbar-link-color;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: $navbar-link-hover-color;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .custom-logo {
+        width: auto;
+        height: 2rem;
+        max-width: 100%;
+        margin-right: 1em;
+
+        @media (max-width: 768px) {
+            height: 1.5rem;
+        }
+    }
+
+    .social-media-icons {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+	// hamburger button styles for mobile screens
+	@media (max-width: 768px) {
+		#navbarContent {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: $navbar-bg-color; /* Adjust background color and opacity */
+			z-index: 9999; /* Ensure it's above other content */
+			overflow-y: auto; /* Allow scrolling if content overflows */
+			display: none; /* Hidden by default */
+		}
+
+		#navbarContent.show {
+			display: block; /* Show when toggled */
+		}
+
+	.close-btn {
+		position: fixed;  /* Fixed position */
+		top: 20px;        /* Distance from the top */
+		right: 20px;      /* Distance from the right */
+		font-size: 30px;  /* Size of the cross */
+		color: red;       /* Color of the cross */
+		background-color: transparent; /* Transparent background */
+		border: none;     /* No border */
+		cursor: pointer;  /* Cursor pointer on hover */
+
+		/* Remove default button padding and outline */
+		padding: 0;
+		outline: none;
+	}
+
+	.close-btn::before {
+		content: '✕'; /* Cross symbol */
+	}
+
+	.close-btn:hover {
+		color: darkred; /* Darker color on hover for interaction feedback */
+	}
+
+
+	}
+
+	// Responsive adjustments
+	@media (max-width: 768px) {
+		.header-container {
+			max-width: 90%; // Wider on smaller screens
+			min-width: 575px;
+			padding: 0 10px; // Adjust padding on smaller screens
+		}
+	}
+}
+
+
+// Responsive adjustments for header container
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 10px;
+    }
+}
+
+
+// Styles for the main tag
+main {
+	padding: 10px 0px 20px 0px; // top, right, bottom, left
+	max-width: 100%;
+    section {
+		margin: 0 auto; // Center the container
+		max-width: 85%; // Adjusted to 70% as an example
+		padding: 0 15px; // Horizontal padding
+        margin-bottom: 2rem;
+
+        &:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        &:nth-child(even) {
+            background-color: #fff;
+        }
+
+        h1, h2 {
+            color: $primary-color;
+        }
+
+        p {
+            color: $text-color;
+        }
+
+        // Specific styles for each section
+        &#intro {
+			background-color: $background-color !important;
+
+			.row {
+				margin: 0 auto;
+				max-width: 800px; // Restrict the maximum width if needed
+
+				.col-lg-6 {
+					// Add custom styles for columns if necessary
+
+					&:first-child {
+						// Styles specific to the image column
+						.img-fluid {
+							max-width: 100%;
+							height: auto;
+							display: block;
+							border-radius: 5px;
+							box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+							// Filter effect
+							filter: sepia(20%);
+
+							// Transform effect
+							&:hover {
+								transform: rotate(3deg) scale(1.05);
+								transition: transform 0.3s ease-in-out;
+							}
+
+							// Clip-path example
+							clip-path: circle(50% at 50% 50%);
+
+							// Overlay effect (if needed)
+							&::after {
+								content: '';
+								position: absolute;
+								top: 0;
+								left: 0;
+								right: 0;
+								bottom: 0;
+								background: rgba(255, 255, 255, 0.2);
+								border-radius: 5px; // Same as the image
+							}
+						}
+
+					}
+
+					&:last-child {
+						text-align: left; // Align text to the left for readability
+
+						h1 {
+							// The color, font-size, and margin-bottom will be inherited from global styles
+							// Add any specific styles for h1 in this section if needed
+							margin-bottom: 1rem; // Space below the heading
+						}
+
+						p {
+							// The color, font-size, and line-height will be inherited from global styles
+							// Add any specific styles for paragraphs in this section if needed
+							 line-height: 1.6; // Line height for better readability
+						}
+						.start-learning-btn {
+							background-color: $primary-color; // Use the primary color variable
+							border: none; // Remove default border
+							padding: 10px 20px; // Custom padding
+							font-size: 1.1rem; // Slightly larger font size
+							font-weight: 600; // Bold font weight
+							border-radius: 5px; // Rounded corners
+
+							&:hover {
+								background-color: darken($primary-color, 10%); // Darken on hover
+								text-decoration: none; // Remove underline on hover
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&#courses {
+			background-color: $background-color; // Use the main background color or any other preferred color
+			padding: 2rem 0; // Add vertical padding for spacing
+
+			h2 {
+				color: $primary-color; // Use the primary color for the heading
+				margin-bottom: 1.5rem; // Space below the heading
+				text-align: center; // Center-align the heading
+			}
+
+			p {
+				color: $text-color; // Use the main text color
+				text-align: center; // Center-align the paragraph
+				margin-bottom: 2rem; // Space below the paragraph
+			}
+
+			.btn-primary {
+				background-color: $primary-color; // Background color for the button
+				border: none; // Remove border
+				&:hover {
+					background-color: darken($primary-color, 10%); // Darken the button on hover for effect
+				}
+			}
+
+			// Additional responsive adjustments or styling as needed
+		}
+
+    &#features {
+			h2 {
+				color: $primary-color; // Use primary color for section heading
+				margin-bottom: 1.5rem; // More space below the heading
+			}
+
+			.card {
+				// Custom card styles if needed
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+				.card-title {
+					color: $heading-color; // Consistent color for card titles
+				}
+
+				.card-text {
+					color: $text-color; // Consistent text color
+				}
+			}
+
+			// Additional custom styles...
+		}
+
+
+    &#faq {
+			h2 {
+				color: $primary-color;
+				margin-bottom: 1.5rem;
+			}
+
+			.card {
+	       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+				.card-header {
+					background-color: $navbar-bg-color;
+					button {
+						text-decoration: none;
+						color: $primary-color;
+						&:hover {
+							color: darken($primary-color, 10%);
+						}
+					}
+				}
+
+				.collapse.show {
+					.card-body {
+						background-color: $secondary-color;
+						color: $text-color;
+					}
+				}
+			}
+
+			// Responsive adjustments
+			@media (max-width: 768px) {
+				// Adjust styles for smaller screens
+			}
+		}
+		&#methodology {
+			background-color: $background-color; // Light background color for contrast
+			padding: 3rem 0; // Top and bottom padding
+
+			h2 {
+				color: $primary-color; // Primary color for the heading
+				margin-bottom: 2rem;
+				text-align: center;
+			}
+
+			p {
+				color: $text-color; // Standard text color
+				font-size: 1rem;
+				line-height: 1.6; // Comfortable line height for reading
+
+				@media (max-width: 768px) {
+					margin-bottom: 1rem; // Space below paragraph on smaller screens
+				}
+			}
+
+			// Additional responsive adjustments or styling as needed
+		}
+
+
+        &#testimonials {
+			background-color: $background-color;
+			h2 {
+				color: $primary-color;
+				margin-bottom: 2rem;
+			}
+
+			.carousel-item {
+				padding: 2rem;
+				min-height: 200px; // Adjust as needed
+
+				.blockquote {
+					p {
+						font-size: 1.2rem;
+						color: $text-color;
+					}
+
+					.blockquote-footer {
+						color: $heading-color;
+					}
+				}
+			}
+
+			.carousel-control-prev-icon,
+			.carousel-control-next-icon {
+				background-color: $primary-color; // Styling navigation arrows
+			}
+
+			// Responsive adjustments
+			@media (max-width: 768px) {
+				.carousel-item {
+					padding: 1rem;
+				}
+			}
+		}
+
+
+        &#contact {
+			background-color: $background-color;
+			h2 {
+				color: $primary-color;
+			}
+			p {
+				color: $text-color;
+			}
+			.btn-primary {
+				// Styles for the 'Get In Touch' button
+			}
+
+			// Include the modal styles as previously defined
+			#contactModal {
+				.modal-content {
+					// Modal customization styles
+				}
+			}
+		}
+      &#quiz-section {
+  .quiz-container {
+    .question {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .answers {
+      margin-bottom: 1rem;
+      label {
+        display: block;
+        margin-bottom: 0.25rem;
+        input[type="radio"] {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .results-container {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    background-color: #f8f9fa;
+  }
+}
+&#google-translate-section {
+  .translated-text {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: #555;
+  }
+}
+
+.online {
+    padding: 4rem 0;
+    background-color: $light-bg-color; // Replace with your light background color variable
+    max-width: 100%;
+
+    .online-content {
+        h1.online-title {
+            font-size: 2.5rem; // Large title font size
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem; // Paragraph font size
+        }
+
+        .btn-wrapper {
+            margin-top: 1.5rem;
+        }
+    }
+
+    .online-banner {
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem; // Optional rounded corners
+        }
+    }
+    @media (max-width: 768px) {
+        .online-content  {
+            .img {
+                height: 200px; /* Adjust the height for smaller screens */
+            }
+        }
+    }
+
+
+}
+
+.courses-section {
+  padding: 4rem 0;
+  background-color: $light-bg-color;
+  max-width: 100%;
+
+    .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .course-card {
+
+        .card-img-top {
+            width: 85% !important;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .card-body {
+            .card-title {
+                font-size: 1.5rem;
+            }
+
+            .card-text {
+                font-size: 1rem;
+                margin-top: 0.5rem;
+            }
+
+            button {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .course-card {
+            .card-img-top {
+                height: 200px; /* Adjust the height for smaller screens */
+            }
+        }
+    }
+
+}
+		// Include responsive adjustments and other styles as necessary
+
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    main {
+        padding: 5px 0px 10px 0px;
+        section {
+            margin-bottom: 1rem;
+      			max-width: 90%; // Wider on smaller screens
+      			min-width: 575px;
+      			padding: 0 10px; // Adjust padding on smaller screens
+        }
+    }
+}
+
+// Add responsive styles as needed
+
+footer {
+    padding: 2rem 0; // Consistent padding with the header
+    max-width: 100%;
+
+    .container {
+        max-width: 85%; // Consistent with the header container width
+        margin: 0 auto; // Center the container
+        padding: 0 15px; // Padding on both sides
+    }
+
+    h5 {
+        font-weight: bold; // Bold headings
+        margin-bottom: 1rem; // Space below headings
+    }
+
+    ul {
+        list-style-type: none; // No bullets for list
+
+        li {
+            margin-bottom: 0.5rem; // Space between list items
+
+            a {
+                color: $text-color;
+                text-decoration: none; // No underline
+
+                &:hover {
+                    color: #ddd; // Lighter color on hover
+                    text-decoration: underline; // Underline on hover
+                }
+            }
+        }
+    }
+
+    address {
+        font-style: normal;
+        line-height: 1.6; // Easy-to-read line height
+    }
+
+    // Responsive adjustments
+    @media (max-width: 768px) {
+      padding: 1rem;
+    }
+}
+
+
+
+// Importing the rest of Bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap';

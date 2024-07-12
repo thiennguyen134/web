@@ -1,0 +1,70 @@
+@import url('variables.css');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+@media screen and (max-width: 600px) {
+    nav li {
+        float: none;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 30px;
+    width: var(--card-width);
+    background-color: var(--card-bg-color);
+    color: var(--card-main-color);
+    padding: var(--card-padding);
+    box-shadow: var(--card-shadow-h-offset) var(--card-shadow-v-offset) var(--card-shadow-blur) rgba(0,0,0,0.2);
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        margin: 15px auto;
+    }
+}

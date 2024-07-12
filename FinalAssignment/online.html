@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses - Learning Finnish</title>
+		<!-- Bootstrap CSS -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Other scripts,  -->
+		<script src="script.js"></script>
+
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<!-- Custom CSS -->
+		<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+	 <div class="header-container">
+		 <!-- Using bootstrap combile custome scss to layout the webpage -->
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			 <!-- Add a logo, then use navbar-brand of bootstrap combine with custom-logo scss -->
+			<a class="navbar-brand" href="#">
+				<img src="./assets/images/logo-dark.svg" alt="Finland flag" class="custom-logo">
+			</a>
+			 <!-- Hamburger Menu Icon is used to have a responsive webpage-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Online Courses</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Vocabulary</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Grammar</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Speaking</a>
+					</li>
+					<!-- Additional nav items -->
+				</ul>
+				<!--social-media-icons-->
+				 <div class="social-media-icons">
+				<a href="https://twitter.com/" class="nav-link" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+				<a href="https://facebook.com/" class="nav-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://instagram.com/" class="nav-link" aria-label="Instagram" ><i class="fab fa-instagram"></i></a>
+				<a href="https://whatsapp.com/" class="nav-link" aria-label="Whatsapp" ><i class="fab fa-whatsapp"></i></a>
+				<a href="https://tiktok.com/" class="nav-link" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+			</div>
+
+			<button class="btn close-btn" type="button"></button>
+			</div>
+
+		</nav>
+	</div>
+	</header>
+    <!-- Content goes here -->
+	<main>
+
+<!-- Online Section -->
+<section id="section_online" class="py-5" aria-label="Online Finnish Courses">
+	<div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 online-content">
+                <h1 class="online-title display-4">
+                    Online Finnish Courses Tailored for You
+                </h1>
+                <p class="lead">
+                    Our comprehensive online Finnish courses are designed to help you learn at your own pace. Whether you're a beginner or looking to polish your skills, we have the right course for you.
+                </p>
+                <div class="btn-wrapper">
+                    <a href="#" class="btn btn-primary">Browse Courses</a>
+                </div>
+            </div>
+            <div class="col-lg-6 online-banner">
+                <img src="./assets/images/online-courses-banner.jpg" alt="Finnish Courses Banner" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+		<!-- Courses Section -->
+ <!--  A feature area for visually appealing layout -->
+	<section id="course" class="py-5">
+		<div class="container">
+			<h2 class="text-center mb-4">The available courses</h2>
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<div class="card h-100">
+						<img class="card-img-top" src="./assets/images/complete-finnish-course.jpg" alt="Feature 1">
+						<div class="card-body">
+							<h5 class="card-title">Complete Finnish Course: From Zero to Hero</h5>
+							<p class="card-text">Start from the basics and become proficient in Finnish with our comprehensive course that covers speaking, reading, writing, and listening.</p>
+							<button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Enroll Now</button>
+						</div>
+					</div>
+				</div>
+	
+				<div class="col-md-4 mb-4">
+					<div class="card h-100">
+						<img class="card-img-top" src="./assets/images/finnish-grammar-intensive.jpg" alt="Feature 2">
+						<div class="card-body">
+							<h5 class="card-title">Finnish Grammar Intensive</h5>
+							<p class="card-text">Dive deep into Finnish grammar, from noun cases to complex sentence structures, and master the rules that govern the language.</p>
+							<button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Enroll Now</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 mb-4">
+					<div class="card h-100">
+						<img class="card-img-top" src="./assets/images/conversational-finnish.jpg" alt="Feature 3">
+						<div class="card-body">
+							<h5 class="card-title">Conversational Finnish for Travelers</h5>
+							<p class="card-text">Planning a trip to Finland? Learn the essentials of conversational Finnish to navigate travel, dining, and basic interactions confidently.</p>
+							<button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Enroll Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<!-- Modal for Course 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modalTitle1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle1">Enroll in Complete Finnish Course</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="enrollForm1">
+                    <div class="form-group">
+                        <label for="fullName1">Your Full Name</label>
+                        <input type="text" class="form-control" id="fullName1" name="fullname" placeholder="Your Full Name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email1">Your Email</label>
+                        <input type="email" class="form-control" id="email1" name="email" placeholder="Your Email" required autocomplete="email">
+                    </div>
+                    <button type="button" class="btn btn-primary">Submit</button>
+					
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal for Course 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modalTitle2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle2">Enroll in Finnish Grammar Intensive</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="enrollForm2">
+                    <div class="form-group">
+                        <label for="fullName2">Your Full Name</label>
+                        <input type="text" class="form-control" id="fullName2" name="fullname" placeholder="Your Full Name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email2">Your Email</label>
+                        <input type="email" class="form-control" id="email2" name="email" placeholder="Your Email" required autocomplete="email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Course 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modalTitle3" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle3">Enroll in Conversational Finnish for Travelers</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="enrollForm3">
+                    <div class="form-group">
+                        <label for="fullName3">Your Full Name</label>
+                        <input type="text" class="form-control" id="fullName3" name="fullname" placeholder="Your Full Name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email3">Your Email</label>
+                        <input type="email" class="form-control" id="email3" name="email" placeholder="Your Email" required autocomplete="email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+		</main>
+
+		<!-- Bootstrap JS, Popper.js, and jQuery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="script.js"></script> <!-- Link to your custom JavaScript file -->
+
+	<footer class="py-4">
+		<div class="container">
+			<div class="row">
+				<!-- Footer Navigation -->
+				<div class="col-md-4 mb-3">
+					<h5>Quick Links</h5>
+					<ul class="list-unstyled">
+						<li><a href="#" >Home <span class="sr-only">(current)</span></a></li>
+						<li><a href="#" >Courses</a></li>
+						<li><a href="#" >About Us</a></li>
+						<li><a href="#" >Contact</a></li>
+					</ul>
+				</div>
+
+				<!-- Social Media Links -->
+				<div class="col-md-4 mb-3">
+					<h5>Follow Us</h5>
+					<ul class="list-unstyled">
+						<li><a href="#" >Facebook</a></li>
+						<li><a href="#" >Twitter</a></li>
+						<li><a href="#" >Instagram</a></li>
+						<li><a href="#" >LinkedIn</a></li>
+					</ul>
+				</div>
+
+				<!-- Contact Information -->
+				<div class="col-md-4 mb-3">
+					<h5>Contact Us</h5>
+					<address>
+						<strong>Email:</strong> <a href="mailto:info@learningFinnish.com" >info@learningFinnish.com</a><br>
+						<strong>Phone:</strong> +123 456 7890<br>
+						<strong>Address:</strong> 123, Katu, Vantaa
+					</address>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

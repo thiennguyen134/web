@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Typography</title>
+    <!-- Link to the Open Sans CSS file -->
+    <link rel="stylesheet" href="open-sans.css">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .paragraph-indents {
+            margin-left: 20px;
+        }
+        /* font weights and styles */
+        .multiple-font-faces {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+        .multiple-font-faces-bold {
+            font-family: 'Open Sans Bold', sans-serif;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        .multiple-font-faces-italic {
+            font-family: 'Open Sans Italic', sans-serif;
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        /*  the text-alignment class */
+        .left-aligned {
+            text-align: left;
+        }
+
+        .center-aligned {
+            text-align: center;
+        }
+
+        .right-aligned {
+            text-align: right;
+        }
+
+
+        .justified-text {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+
+            <ul>
+                <li><a href="css-library.html">CSS Library</a></li>
+                <li><a href="forms.html">Forms page</a></li>
+                <li><a href="web-typography.html">Web Typography</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="paragraph-indents">
+            <h1>Paragraph Indents</h1>
+            <p class="paragraph-indents">This is a paragraph with an indent.</p>
+        </section>
+
+        <section class="multiple-font-faces">
+            <h1>Multiple Font Faces (The Right Way)</h1>
+            <p class="multiple-font-faces">This paragraph uses the regular font.</p>
+            <p class="multiple-font-faces-bold">This paragraph uses the bold font.</p>
+            <p class="multiple-font-faces-italic">This paragraph uses the italic font.</p>
+        </section>
+        <section class="text-alignment">
+            <h1>Text Alignment</h1>
+            <p class="left-aligned">This paragraph is left-aligned.</p>
+            <p class="center-aligned">This paragraph is center-aligned.</p>
+            <p class="right-aligned">This paragraph is right-aligned.</p>
+        </section>
+
+        <section class="justified-text">
+            <h1>Justified Text</h1>
+            <p class="justified-text">This is a justified paragraph.</p>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

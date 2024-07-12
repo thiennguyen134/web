@@ -1,0 +1,40 @@
+/* Reset default margin and padding for body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the main container */
+main {
+    text-align: center; /* Center the content horizontally */
+    margin: 20px; /* Add margin for spacing */
+}
+
+/* Style for the h1 heading */
+h1 {
+    font-size: 24px; /* Adjust the font size */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+}
+
+/* Style for the list of exercises */
+ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style for each list item */
+li {
+    margin: 10px 0; /* Add margin to separate list items vertically */
+}
+
+/* Style for the links within list items */
+li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Change link color */
+    font-weight: bold; /* Make links bold */
+}
+
+/* Style for links on hover */
+li a:hover {
+    color: #007bff; /* Change link color on hover */
+}

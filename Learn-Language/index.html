@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--
+    - primary meta tags
+  -->
+  <title>Learning Finnish - This is website for free Finnish lessons.</title>
+  <meta name="title" content="Learning Finnish - The free Finnish lessons">
+  <meta name="description" content="This is a free Finnish lessons website ">
+
+  <!--
+    - favicon
+  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ775iR30PmjlR3xcz4xY/X8nREB+zDD2AWz" crossorigin="anonymous">
+   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <!--
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/Blog.svg">
+
+</head>
+
+<body>
+
+  <!--
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo-dark.svg" width="128" height="48" alt="Finnish learning home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.svg" width="64" height="24" alt="FinnishLearning home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Online Courses</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Vocabulary</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Grammar</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Speaking</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
+
+          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!--
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="home">
+        <div class="container">
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.jpg" width="560" height="540" alt="FinnishLearning" class="w-100"
+              data-reveal="top">
+
+            <img src="./assets/images/250_Free_Finnish_lessons.svg" width="812" height="364" alt="250+ Free Finnish lessons" class="shape"
+              data-reveal="top" data-reveal-delay="0.25s">
+          </figure>
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
+              Learn Finnish online and improve your skills through our high-quality courses and resources.
+            </h1>
+
+            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+              Everything you find here has been specially created by the LearnFinnish, the free Finnish lessons.
+            </p>
+
+            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+            <a href="online.html" class="btn btn-primary">Start learning</a>
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-label="about">
+        <div class="container">
+
+          <div class="wrapper">
+
+            <div data-reveal="left">
+              <h2 class="h2 section-title">How do we evaluate your Finnish?</h2>
+
+              <p class="section-text">
+               Our software enables users to track their Finnish language learning progress in key areas, each with a goal of 100% mastery. Key features include:
+				Finnish Vocabulary: Aim for 100% mastery.
+				Finnish Grammar: Target over 80% proficiency.
+				Speaking Skills: Strive for at least 85% proficiency.
+				Writing Skills: Work towards 85% mastery or more.
+				This user-friendly tracking system helps learners set and achieve clear goals in their Finnish language journey.
+              </p>
+            </div>
+
+            <ul class="progress-list" data-reveal="right">
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Finnish vocabulary</p>
+
+                  <span class="span">100 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 100%; background-color: #c7b1dd"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Finnish grammar</p>
+
+                  <span class="span">80 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 80%; background-color: #8caeec"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Speaking skills</p>
+
+                  <span class="span">85 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 85%; background-color: #b0d4c1"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Writing skills</p>
+
+                  <span class="span">90 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 90%; background-color: #e3a6b6"></div>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li data-reveal="bottom">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon">
+                </div>
+
+                <h3 class="h4 card-title">Finnish vocabulary</h3>
+
+                <p class="card-text">
+                 Finnish vocabulary on our platform is rich and diverse, designed for learners at all levels. From basic greetings to complex expressions, we cover an extensive range of words and phrases.
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.25s">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon">
+                </div>
+
+                <h3 class="h4 card-title">Finnish grammar</h3>
+
+                <p class="card-text">
+                  Our Finnish grammar resources are meticulously crafted to guide learners through the intricacies of Finnish syntax and structure.
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.5s">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy"
+                    alt="web development icon">
+                </div>
+
+                <h3 class="h4 card-title">Speaking skills</h3>
+
+                <p class="card-text">
+                 Enhance your Finnish speaking skills with our tailored modules, designed to improve fluency and pronunciation.
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.75s">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon">
+                </div>
+
+                <h3 class="h4 card-title">Writing skills</h3>
+
+                <p class="card-text">
+                  Develop your Finnish writing skills through our comprehensive program, which focuses on crafting clear and coherent text in Finnish.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+<!-- Quiz Section -->
+<section class="section quiz-section" aria-label="Finnish Language Quiz">
+    <div class="container">
+        <h2 class="section-title">Finnish Language Quiz</h2>
+        <div id="quiz"></div>
+        <button id="submit" class="btn btn-primary">Submit Answer</button>
+        <div id="results" class="quiz-results"></div>
+    </div>
+</section>
+
+<!-- Translation Section -->
+<section class="translation-section">
+  <div class="container">
+    <h2>Translate to Finnish</h2>
+    <div class="translate-form">
+      <input type="text" id="sourceText" placeholder="Enter text">
+      <button id="translateButton">Translate</button>
+    </div>
+    <p id="translatedText"></p>
+  </div>
+</section>
+
+
+
+<script>
+document.getElementById('translateButton').addEventListener('click', () => {
+  const text = document.getElementById('sourceText').value;
+  const apiKey = 'AIzaSyDGWin6Nh4CDoGro-mR4xUqioIJXW__DXU'; // Replace with your actual API key
+  const url = `https://translation.googleapis.com/language/translate/v2?target=fi&q=${encodeURIComponent(text)}&key=${apiKey}`;
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      const translatedText = data.data.translations[0].translatedText;
+      document.getElementById('translatedText').innerText = translatedText;
+    })
+    .catch(error => console.error('Error:', error));
+});
+
+</script>
+
+      <!--
+        - #lesson
+      -->
+
+      <section class="section lesson" aria-labelledby="lesson-label">
+        <div class="container">
+
+          <div class="title-wrapper" data-reveal="top">
+
+            <div>
+              <h2 class="h2 section-title" id="lesson-label">Latest Lessons</h2>
+
+              <p class="section-text">
+                Check out some of out latest lessons.
+              </p>
+            </div>
+
+            <a href="#" class="btn btn-secondary">See All Lessons</a>
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="lesson-card lesson-card-1" style="background-color: #f8f5fb">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #a07cc5">Finnish vocabulary</p>
+
+                  <h3 class="h3 card-title">Travel-Focused Finnish Vocabulary Essentials</h3>
+
+                  <p class="card-text">
+                    Explore essential Finnish vocabulary for travel in our latest lesson. This concise module focuses on practical words and phrases you'll use while navigating Finnish cities, dining out, and interacting with locals. With clear audio pronunciations and engaging practice exercises, you'll quickly learn to communicate confidently in common travel situations. Perfect for beginners or those planning a trip to Finland, this lesson is your key to a more immersive and enjoyable travel experience.
+                  </p>
+
+                  <a href="#" class="btn-text" style="color: #a07cc5">
+                    <span class="span">See Lesson</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/vocabulary.png" width="650" height="370" loading="lazy" alt="Finnish vocabulary"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="lesson-card lesson-card-2" style="background-color: #f1f5fd">
+
+                <div class="card-content" data-reveal="right">
+
+                  <p class=" card-tag" style="color: #3f78e0">Finnish grammar</p>
+
+                  <h3 class="h3 card-title">Introduction to Vowel Harmony in Finnish Grammar</h3>
+
+                  <p class="card-text">
+                    This lesson introduces the concept of vowel harmony, a crucial aspect of Finnish grammar. Vowel harmony refers to the way in which certain vowels in a word affect the vowels that can appear in the suffixes attached to that word. Understanding vowel harmony is essential for correct word formation in Finnish, especially when it comes to adding suffixes for cases, plurals, and verb conjugations..
+                  </p>
+
+                  <a href="#" class="btn-text" style="color: #3f78e0">
+                    <span class="span">See Lesson</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/grammar.png" width="600" height="367" loading="lazy" alt="Finnish grammar"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="lesson-card lesson-card-3" style="background-color: #f5faf7">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #7cb798">Finnish speaking skills</p>
+
+                  <h3 class="h3 card-title">Enhancing Your Finnish Speaking Skills</h3>
+
+                  <p class="card-text">
+                   This lesson is designed to boost your Finnish speaking abilities, focusing on pronunciation, fluency, and conversational skills. You'll engage in practical exercises that mimic real-life conversations and scenarios, helping you become more comfortable and confident in speaking Finnish.
+                  </p>
+
+                  <a href="#" class="btn-text" style="color: #7cb798">
+                    <span class="span">See Lesson</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/speaking.png" width="600" height="367" loading="lazy" alt="Finnish speaking skills"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="lesson-card lesson-card-4" style="background-color: #fcf4f6">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #d16b86">Finnish Writing Skills</p>
+
+                  <h3 class="h3 card-title">Mastering Finnish Writing Skills</h3>
+
+                  <p class="card-text">
+                    This lesson aims to develop and refine your Finnish writing abilities, covering essential aspects such as grammar, vocabulary, sentence structure, and style. The session is designed to help learners effectively express their thoughts and ideas in written Finnish, suitable for various contexts ranging from formal to informal writing.
+                  </p>
+
+                  <a href="#" class="btn-text" style="color: #d16b86">
+                    <span class="span">See Lesson</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/writing.png" width="620" height="370" loading="lazy" alt="Finnish Writing Skills"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <section class="section contact" aria-label="contact">
+        <div class="container">
+
+          <div class="contact-card">
+
+            <div class="contact-content" data-reveal="left">
+
+              <div class="card-icon">
+                <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
+              </div>
+
+              <h2 class="h2 section-title">Accelerate Your Finnish Language Journey with Expert Guidance.</h2>
+
+              <p class="section-text">
+                If you're excited about advancing your Finnish language skills, I'm here to help. I provide quick and effective solutions to streamline your Finnish learning journey. Do you have any questions or need guidance? Feel free to reach out through this contact form, and I'll get back to you soon to assist you on your path to mastering Finnish.
+              </p>
+
+            </div>
+
+            <form action="" class="contact-form" data-reveal="right">
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Name *" required class="input-field">
+
+                <input type="email" name="email_address" placeholder="Email *" required class="input-field">
+              </div>
+
+              <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">Send message</button>
+
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+<section class="section faq" aria-label="FAQ">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-content">
+            <div class="faq-item">
+                <button class="faq-question">What is the best way to start learning Finnish?</button>
+                <div class="faq-answer">Starting with basic vocabulary and phrases is a great way to immerse yourself in the Finnish language.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Are there any recommended apps or resources for learning Finnish?</button>
+                <div class="faq-answer">Apps like Duolingo, Babbel, and Memrise offer Finnish language courses. Also, websites like Suomen Mestari provide valuable resources.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How long does it typically take to become fluent in Finnish?</button>
+                <div class="faq-answer">Fluency depends on the individual's dedication and practice. On average, it may take a few years of consistent study.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Are Finnish grammar and pronunciation difficult to learn?</button>
+                <div class="faq-answer">Finnish grammar is unique and may be challenging initially. Pronunciation requires practice but is generally straightforward.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can watching Finnish TV shows and movies help in learning the language?</button>
+                <div class="faq-answer">Yes, immersing yourself in the language through media can significantly aid in learning and understanding Finnish.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  </main>
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        © 2023 LearnFinnish. All rights reserved.
+      </p>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-dribbble"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/faq.js"></script> <!-- New JavaScript file for FAQ interaction -->
+
+  <!--
+    - ionicon link
+  -->
+   <!-- Bootstrap JS and its dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

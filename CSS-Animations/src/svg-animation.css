@@ -1,0 +1,24 @@
+@keyframes colorPulse {
+    0%, 100% { fill: #f4e16e; }
+    25% { fill: #ffdd67; }
+    50% { fill: #f4e16e; }
+    75% { fill: #e1d55d; }
+  }
+  
+  .animated-svg .a {
+    animation: colorPulse 5s infinite ease-in-out;
+  }
+  
+  @keyframes scaleRotate {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.1) rotate(20deg); }
+    50% { transform: scale(1) rotate(0deg); }
+    75% { transform: scale(0.9) rotate(-20deg); }
+  }
+  
+  .animated-svg .d {
+    animation: scaleRotate 5s infinite ease-in-out;
+  }
+  
+  /* Additional transformations can be applied to other classes (.b and .c) similarly */
+  

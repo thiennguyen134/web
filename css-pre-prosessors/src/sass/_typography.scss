@@ -1,0 +1,13 @@
+// _typography.scss
+@import 'variables'; // This imports the variables into your typography partial
+
+// _typography.scss
+h1, h2, h3 {
+  color: $accent-color;
+  font-family: $secondary-font-stack;
+}
+
+body {
+  font-family: $font-stack;
+  color: darken($primary-color, 50%); // Assuming you want a darker color for text
+}

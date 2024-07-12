@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Finnish Courses - Learn Finnish with Ease</title>
+  <meta name="title" content="Online Finnish Courses - Interactive and Comprehensive">
+  <meta name="description" content="Join our online Finnish courses and start your journey to fluency. Expert tutors, interactive lessons, and practical exercises to ensure you learn Finnish effectively.">
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ775iR30PmjlR3xcz4xY/X8nREB+zDD2AWz" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo-dark.svg" width="128" height="48" alt="Finnish learning home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.svg" width="64" height="24" alt="FinnishLearning home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Online Courses</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Vocabulary</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Grammar</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Speaking</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
+
+          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <section class="section hero" aria-label="Online Finnish Courses">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="h1 hero-title">
+            Online Finnish Courses Tailored for You
+          </h1>
+          <p class="section-text">
+            Our comprehensive online Finnish courses are designed to help you learn at your own pace. Whether you're a beginner or looking to polish your skills, we have the right course for you.</p>
+          <div class="btn-wrapper">
+            <a href="#" class="btn btn-primary">Browse Courses</a>
+          </div>
+        </div>
+        <figure class="hero-banner">
+          <img src="./assets/images/online-courses-banner.jpg" alt="Finnish Courses Banner" class="w-100">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Explore Our Courses Section -->
+    <!-- Courses Section -->
+    <section class="courses-section">
+      <div class="container">
+        <h2 class="section-title">Explore Our Courses</h2>
+
+        <!-- Course 1 -->
+        <div class="course-card">
+          <img src="./assets/images/complete-finnish-course.jpg" alt="Complete Finnish Course" class="course-image">
+          <div class="course-content">
+            <h3 class="course-title">Complete Finnish Course: From Zero to Hero</h3>
+            <p class="course-description">Start from the basics and become proficient in Finnish with our comprehensive course that covers speaking, reading, writing, and listening.</p>
+            <button onclick="openModal('modal1')">Enroll Now</button>
+          </div>
+        </div>
+        <!-- Modal for Course 1 -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <form id="enrollForm1" onsubmit="simulateEnrollment(event, 1)">
+              <input type="text" name="fullname" placeholder="Your Full Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card">
+          <img src="./assets/images/finnish-grammar-intensive.jpg" alt="Finnish Grammar Intensive" class="course-image">
+          <div class="course-content">
+            <h3 class="course-title">Finnish Grammar Intensive</h3>
+            <p class="course-description">Dive deep into Finnish grammar, from noun cases to complex sentence structures, and master the rules that govern the language.</p>
+            <button onclick="openModal('modal2')">Enroll Now</button>
+          </div>
+        </div>
+        <!-- Modal for Course 2 -->
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <form id="enrollForm2" onsubmit="simulateEnrollment(event, 1)">
+              <input type="text" name="fullname" placeholder="Your Full Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card">
+          <img src="./assets/images/conversational-finnish.jpg" alt="Conversational Finnish for Travelers" class="course-image">
+          <div class="course-content">
+            <h3 class="course-title">Conversational Finnish for Travelers</h3>
+            <p class="course-description">Planning a trip to Finland? Learn the essentials of conversational Finnish to navigate travel, dining, and basic interactions confidently.</p>
+            <button onclick="openModal('modal3')">Enroll Now</button>
+          </div>
+        </div>
+        <!-- Modal for Course 3 -->
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <form id="enrollForm3" onsubmit="simulateEnrollment(event, 1)">
+              <input type="text" name="fullname" placeholder="Your Full Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+    <script>
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = "block";
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = "none";
+    }
+
+    function simulateEnrollment(event, courseId) {
+      event.preventDefault();
+      const formId = 'enrollForm' + courseId;
+      const form = document.getElementById(formId);
+      const fullName = form.elements['fullname'].value;
+      const email = form.elements['email'].value;
+      alert(`Thank you, ${fullName}, for enrolling in Course ${courseId}! We will send details to ${email}.`);
+      closeModal('modal' + courseId);
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+      }
+    }
+
+    </script>
+
+
+
+    <!-- Additional sections like testimonials, FAQs, or an about us section can be added here -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <!-- Footer content stays the same to keep consistency -->
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

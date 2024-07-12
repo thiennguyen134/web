@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles_exercise3.css">
+    <title>Responsive Images Example</title>
+</head>
+<body>
+    <div class="section header">
+        <div class="photo">
+            <picture>
+                <source media="(min-width: 401px)" srcset="images/photo-big.jpg">
+                <source media="(max-width: 400px)" srcset="images/photo-tall.jpg">
+                <img src="images/photo-small.jpg" alt="Header Photo">
+            </picture>
+        </div>
+    </div>
+
+    <div class="section content">
+        <img class="illustration" src="images/illustration.svg" style="max-width: 500px" alt="Illustration">
+    </div>
+
+    <!-- Your other content goes here -->
+
+</body>
+</html>

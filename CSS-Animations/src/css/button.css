@@ -1,0 +1,27 @@
+.button-svg {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .button-svg .a,
+  .button-svg .b,
+  .button-svg .c {
+    transition: fill 0.3s ease;
+  }
+  
+  .button-svg:hover .a,
+  .button-svg:hover .b,
+  .button-svg:hover .c {
+    fill: #8b2424; 
+  }
+  
+  .button-svg:active {
+    transform: scale(0.95);
+  }
+  
+  .button-svg:active .a,
+  .button-svg:active .b,
+  .button-svg:active .c {
+    fill: #5e1a1a; 
+  }
+  

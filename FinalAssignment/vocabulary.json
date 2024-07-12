@@ -1,0 +1,44 @@
+[
+    {
+        "word": "koti",
+        "description": "home",
+        "image": "./assets/images/vocabulary/koti.jpg",
+        "audio": "./assets/audios/koti.mp3"
+    },
+    {
+        "word": "ovi",
+        "description": "door",
+        "image": "./assets/images/vocabulary/ovi.jpg",
+        "audio": "./assets/audios/ovi.mp3"
+    },
+    {
+        "word": "ikkuna",
+        "description": "window",
+        "image": "./assets/images/vocabulary/ikkuna.jpg",
+        "audio": "./assets/audios/ikkuna.mp3"
+    },
+    {
+        "word": "huone",
+        "description": "room",
+        "image": "./assets/images/vocabulary/huone.jpg",
+        "audio": "./assets/audios/huone.mp3"
+    },
+    {
+        "word": "keittiö",
+        "description": "kitchen",
+        "image": "./assets/images/vocabulary/keittio.jpg",
+        "audio": "./assets/audios/keittio.mp3"
+    },
+    {
+        "word": "kylpyhuone",
+        "description": "bathroom",
+        "image": "./assets/images/vocabulary/kylpyhuone.jpg",
+        "audio": "./assets/audios/kylpyhuone.mp3"
+    },
+    {
+        "word": "makuuhuone",
+        "description": "Bedroom",
+        "image": "./assets/images/vocabulary/makuuhuone.jpg",
+        "audio": "./assets/audios/makuuhuone.mp3"
+    }
+]
